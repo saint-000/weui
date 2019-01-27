@@ -1,0 +1,47 @@
+{
+  "pages":[
+   "pages/test/test",
+   "pages/index/index",
+    "pages/logs/logs",
+    "pages/talkpage/talkpage",
+    "pages/search/search",
+    "pages/ranking/ranking"
+   
+  ],
+  "window":{
+    "backgroundTextStyle": "dark",
+    "navigationBarBackgroundColor": "#31c27c",
+    "navigationBarTitleText": "好行头",
+    "navigationBarTextStyle": "white",
+    "BackgroundColor": "#000000",
+    "enablePullDownRefresh": true   
+  },
+
+    "tabBar": {
+      "color": "#000000",
+      "selectedColor": "#000000",
+      "backgroundColor": "#31c27c",
+      "borderStyle": "black",
+      "list": [
+        {
+          "pagePath": "pages/index/index",
+          "text": "首页",
+          "iconPath": "img/sy.jpg",
+          "selectedIconPath": "img/sy.jpg"
+        },
+        {
+          "pagePath": "pages/logs/logs",
+          "text": "分类",
+          "iconPath": "img/fl.jpg",
+          "selectedIconPath": "img/fl.jpg"
+        },
+        {
+          "pagePath": "pages/search/search",
+          "text": "我的",
+          "iconPath": "img/wd.jpg",
+          "selectedIconPath": "img/wd.jpg"
+        }
+      ]
+    },
+    "debug": true
+  }
