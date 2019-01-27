@@ -1,0 +1,84 @@
+首先是对布局容器设置display:flex; 
+然后你就可以尽情利用两个属性（justify-content（水平方向）和align-items（垂直方向））进行放纵了 
+例如众所周知最蛋疼的垂直居中
+
+/* wxml */
+<view class="classname">
+    <text>测试用小玩意儿</text>
+</view>
+复制代码	
+/* wxss */
+view{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+复制代码
+
+
+将align-items改成justify-content
+
+/* wxml */
+<view class="classname">
+<text>测试用小玩意儿</text>
+</view>
+复制代码
+/* wxss */
+view{
+width: 100%;
+height: 100%;
+display: flex;
+justify-content: center;
+}
+复制代码
+
+
+两个属性一起来
+
+
+
+ 
+
+ 常用场景不止居中布局，还有很多，但一讲起来篇幅难免太长，这里用文字带过，不懂可以留言问我，或者度娘/Google（推荐看阮一峰的教程）
+
+flex-direction（改变轴线方向）: row（水平轴线，默认） column（垂直轴线） //这里讲的是比较常用的布局 
+（轴线举例：父级元素使用flex布局，默认布局下块级元素是会换行的，但设置了flex布局后默认就都水平排列了） 
+justify-content: flex-start（居于轴线的开头） center（居于轴线的中间） flex-end（居于轴线的末端） space-around（将子元素按比例排列在轴线上） space-between（将子元素排列在轴线两端） 
+align-items: 同justify-content 
+flex-wrap（规定子元素溢出处理）: nowrap（不换行） wrap（顺序换行） wrap-reverse（逆序换行）
+
+flex-direction（改变轴线方向）: row（水平轴线，默认） column（垂直轴线） //这里讲的是比较常用的布局 
+（轴线举例：父级元素使用flex布局，默认布局下块级元素是会换行的，但设置了flex布局后默认就都水平排列了） 
+justify-content: flex-start（居于轴线的开头） center（居于轴线的中间） flex-end（居于轴线的末端） space-around（将子元素按比例排列在轴线上） space-between（将子元素排列在轴线两端） 
+align-items: 同justify-content 
+flex-wrap（规定子元素溢出处理）: nowrap（不换行） wrap（顺序换行） wrap-reverse（逆序换行）
+
+
+************************************************************************************************************
+************************************************************************************************************
+<view class="page">
+    <view class="page__hd">
+        <view class="page__title">表单</view>
+   
+    </view>
+    <view class="page__bd page__bd_spacing">
+       
+        <view class="weui-flex">
+            <view class="weui-flex__item"><view class="placeholder">做志愿</view></view>
+            <view class="weui-flex__item"><view class="placeholder">找组织</view></view>
+        </view>
+        <view class="weui-flex">
+            <view class="weui-flex__item"><view class="placeholder">公益课堂</view></view>
+            <view class="weui-flex__item"><view class="placeholder">扶贫募助</view></view>
+            <view class="weui-flex__item"><view class="placeholder">积分排名</view></view>
+        </view>
+        <view class="weui-flex">
+            <view class="weui-flex__item"><view class="placeholder">公益捐赠</view></view>
+            <view class="weui-flex__item"><view class="placeholder">个人中心</view></view>
+            <view class="weui-flex__item"><view class="placeholder">公开窗口</view></view>
+            <view class="weui-flex__item"><view class="placeholder">志愿者服务矩阵</view></view>
+        </view>
+       
+    </view>
+</view>
