@@ -1,0 +1,43 @@
+{
+  "pages":[
+
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/my/my"
+  ],
+  "window":{
+    "backgroundTextStyle":"dark",
+    "navigationBarBackgroundColor": "#31c27c",
+    "navigationBarTitleText": "益起来，爱益无限",
+    "navigationBarTextStyle":"white",
+    "BackgroundColor":"#000000",
+    "enablePullDownRefresh": true
+  },
+  "tabBar": {
+    "color": "#000000",
+    "selectedColor": "#000000",
+    "backgroundColor": "#31c27c",
+    "borderStyle": "black",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "img/sy.jpg",
+        "selectedIconPath": "img/sy.jpg"
+      },
+      {
+        "pagePath": "pages/logs/logs",
+        "text": "分类",
+        "iconPath": "img/fl.jpg",
+        "selectedIconPath": "img/fl.jpg"
+      },
+      {
+        "pagePath": "pages/my/my",
+        "text": "个人中心",
+        "iconPath": "img/wd.jpg",
+        "selectedIconPath": "img/wd.jpg"
+      }
+    ]
+  },
+  "debug": true
+}
